@@ -29,7 +29,7 @@ To learn more about Redis Cloud support for SAML, see [SAML single sign-on]({{<r
    
    {{<image filename="images/rc/saml/auth0_saml_2.png" alt="" >}}{{</image>}}
 
-   The key-value pair of `redisAccountMapping` consists of a lowercase role name (owner, member, manager, or viewer) and your Redis Cloud Account ID found in the [account settings]({{<relref "rc/accounts/account-settings">}}).
+   The key-value pair of `redisAccountMapping` consists of a lowercase role name (owner, member, manager, billing_admin, or viewer) and your Redis Cloud Account ID found in the [account settings]({{<relref "rc/accounts/account-settings">}}).
 
     ```
     {
@@ -80,7 +80,7 @@ To learn more about Redis Cloud support for SAML, see [SAML single sign-on]({{<r
 
     {{<image filename="images/rc/saml/auth0_saml_7.png" alt="" >}}{{</image>}}
 
-    * We suggest that you update the default logo of the application to the [Redis icon](https://saml-integration-logo.s3.amazonaws.com/redis-cube-red_white-rgb.png) for better visibility. 
+    * We suggest that you update the default logo of the application to the Redis icon for better visibility. 
 
 1. From the newly created application, go to **Addons** and enable **SAML 2 WEB APP**.
 
@@ -187,5 +187,5 @@ Replace `ID` so it matches the `AssertionConsumerService` Location URL ID (the c
 
 You have successfully configured SAML as an identification provider.
 
-    {{<image filename="images/rc/saml/auth0_saml_14.png" alt="" >}}{{</image>}}
+{{<image filename="images/rc/saml/auth0_saml_14.png" alt="" >}}{{</image>}}
 

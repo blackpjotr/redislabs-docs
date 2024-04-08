@@ -12,10 +12,13 @@ aliases: /rv/api/how-to/using-curl/
          /rc/api/get-started/use-rest-api.md         
 ---
 You can access and use the API endpoint URI ([`https://api.redislabs.com/v1`](https://api.redislabs.com/v1/)) with any of the following tools:
-
 - The Swagger user interface
 - The cURL HTTP client
 - An HTTP client in any programming language
+
+{{< note >}}
+For the Redis Cloud API, there is a request limit of 400 requests per minute per Account API key. If you go past this limit, your API requests will fail.
+{{< /note >}}
 
 ## Swagger user interface
 
@@ -85,7 +88,7 @@ Some API operations require input, such as:
         ![swagger-post-edit-body](/images/rv/api/swagger-post-edit-body.png)
 
 {{< warning >}}
-The Swagger UI generates default JSON examples for `POST` and `PUT` operations. You should modify these examples to suit your specific needs and account settings. The examples will fail if used as-is. <br/><br/>For more examples showing how to use specific endpoints, see [REST API examples]({{< relref "/rc/api/examples/_index.md" >}}).
+The Swagger UI generates default JSON examples for `POST` and `PUT` operations. You should modify these examples to suit your specific needs and account settings. The examples will fail if used as-is. <br/><br/>For more examples showing how to use specific endpoints, see [REST API examples]({{< relref "/rc/api/examples" >}}).
 {{< /warning >}}
 
 ## Use the `cURL` HTTP client

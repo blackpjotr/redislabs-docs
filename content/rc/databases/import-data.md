@@ -1,7 +1,7 @@
 ---
 Title: Import data into a database
 description:
-weight: 35
+weight: 20
 alwaysopen: false
 categories: ["RC"]
 linktitle: Import data
@@ -208,7 +208,10 @@ To import an RDB file stored in a Microsoft Azure Blog storage container:
 1. In the **Danger Zone**, select **Import**.
 1. Enter the details for the RDB file:
     - Source type - Select **Azure Blob Storage**.
-    - Source path - Enter the URL for the RDB file: `abs://:storage_account_access_key@storage_account_name/[container/]filename.rdb[.gz]`
+    - Source path - Enter the URL for the RDB file:
+        ```text
+        abs://:storage_account_access_key@storage_account_name/[container/]filename.rdb[.gz]     
+        ```
 
         Where:
         - `storage_account_access_key` - Primary access key to the storage account

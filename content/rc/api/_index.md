@@ -22,7 +22,7 @@ You can use the API to:
 ## Getting started
 
 1. [Enable the API]({{< relref  "/rc/api/get-started/enable-the-api.md" >}})
-1. [Authenticate and authorize]({{< relref  "/rc/api/get-started/_index.md" >}})
+1. [Authenticate and authorize]({{< relref  "/rc/api/get-started" >}})
 1. [Create API keys]({{< relref  "/rc/api/get-started/manage-api-keys.md" >}})
 1. [Use the API]({{< relref  "/rc/api/get-started/use-rest-api.md" >}})
 1. [Learn the API lifecycle]({{< relref  "/rc/api/get-started/process-lifecycle.md" >}})
@@ -32,7 +32,7 @@ You can use the API to:
 
 1. [Manage subscriptions]({{< relref  "/rc/api/examples/manage-subscriptions.md" >}})
 1. Database examples
-    1. [Create database]({{< relref  "/rc/api/examples/create-database.md" >}})
+    1. [Create database]({{< relref  "/rc/api/examples/create-database" >}})
     1. [Update database]({{< relref  "/rc/api/examples/update-database.md" >}})
     1. [Back up and import data]({{< relref  "/rc/api/examples/back-up-and-import-data.md" >}})
 1. [Manage cloud accounts]({{< relref  "/rc/api/examples/manage-cloud-accounts.md" >}})
@@ -43,4 +43,4 @@ You can use the API to:
 
 - Use the [Redis Cloud API]({{< relref  "/rc/api/get-started/use-rest-api.md" >}})
 - [Full API Reference](https://api.redislabs.com/v1/swagger-ui.html)
-- Secure [authentication and authorization]({{< relref  "/rc/api/get-started/_index.md" >}})
+- Secure [authentication and authorization]({{< relref  "/rc/api/get-started" >}})

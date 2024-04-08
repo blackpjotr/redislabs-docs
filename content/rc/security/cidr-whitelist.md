@@ -14,11 +14,9 @@ The [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) [allow 
 
 You can configure your database's CIDR allow list to restrict client connections to a specific range of IP addresses.
 
-
 {{< note >}}
-To use the CDIR allow list, you must be on either Redis Cloud Fixed, Flexible, or Annual plans.  This feature is not supported on Redis Cloud Free.
+To use the CDIR allow list, you must be on either paid Redis Cloud Essentials or on Redis Cloud Pro.  This feature is not supported on free Redis Cloud Essentials plans.
 {{< /note >}}
-
 
 ### Define CIDR allow list
 
@@ -26,9 +24,9 @@ To define the CIDR allow list for a database:
 
 1. Select **Databases** from the [Redis Cloud console](https://app.redislabs.com/) menu and then select your database from the list.
 
-1. From the database's **Configuration** screen, select the **Edit database** button:
+1. From the database's **Configuration** screen, select the **Edit database** button.
 
-1. In the **Security** section, turn on the **CIDR allow list** toggle:
+1. In the **Security** section, turn on the **CIDR allow list** toggle.
 
 1. Enter the first IP address (in CIDR format) you want to allow in the text box and then select the check mark to add it to the allow list:
 
@@ -43,6 +41,10 @@ To define the CIDR allow list for a database:
         {{<image filename="images/rc/database-details-configuration-tab-security-cidr-allowlist-add-more-ips.png" width="300px" alt="Add a new IP address to the CIDR allow list." >}}{{< /image >}}
 
 1. Select **Save database** to apply your changes.
+
+{{< note >}}
+The database CIDR allow list applies to both the public endpoint and the private endpoint. If you use connectivity options such as [VPC Peering]({{< relref "/rc/security/vpc-peering" >}}) and [Transit Gateway]({{<relref "/rc/security/aws-transit-gateway">}}) to connect to your database via the private endpoint, you must also add those IPs to your database's CIDR allow list.
+{{< /note >}}
 
 ## Subscription allow list
 
@@ -63,7 +65,7 @@ To add IP addresses or [AWS security groups](https://docs.aws.amazon.com/managed
 
 1. Select an entry **Type** from the list:
 
-    {{<image filename="images/rc/subscription-connectivity-allow-list-type-dropdown.png" width="350px" alt="Select the type of entry to add to the allow list from the Type list." >}}{{< /image >}}
+    {{<image filename="images/rc/subscription-connectivity-allow-list-type-dropdown.png" alt="Select the type of entry to add to the allow list from the Type list." >}}{{< /image >}}
 
 1. In the **Value** box, enter one of these options:
 
@@ -79,6 +81,6 @@ To add IP addresses or [AWS security groups](https://docs.aws.amazon.com/managed
 
     1. Select the new entry's **Type**, enter the **Value**, and select check to add it to the allow list.
 
-        {{<image filename="images/rc/subscription-connectivity-allow-list-add-entry.png" width="350px" alt="Define the new entry and select the Submit entry button to add it to the allow list." >}}{{< /image >}}
+        {{<image filename="images/rc/subscription-connectivity-allow-list-add-entry.png" alt="Define the new entry and select the Submit entry button to add it to the allow list." >}}{{< /image >}}
 
 1. Select **Apply all changes** to apply the allow list updates.

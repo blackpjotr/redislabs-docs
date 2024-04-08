@@ -65,9 +65,9 @@ Several access control list (ACL) commands are not available in Redis Enterprise
 
 ## Module commands
 
-For Redis Enterprise Software, you can [manage Redis modules]({{<relref "/stack/install/">}}) from the admin console or with [REST API requests](/rs/references/rest-api/requests/modules/).
+For Redis Enterprise Software, you can [manage Redis modules]({{<relref "/stack/install/">}}) from the admin console or with [REST API requests]({{<relref "/rs/references/rest-api/requests/modules">}}).
 
-Redis Cloud manages modules for you and lets you [enable modules](/rc/databases/create-database#modules) when you create a database.
+Redis Cloud manages modules for you and lets you [enable modules]({{<relref "/rc/databases/create-database#modules">}}) when you create a database.
 
 | <span style="min-width: 9em; display: table-cell">Command</span> | Redis<br />Enterprise | Redis<br />Cloud | <span style="min-width: 9em; display: table-cell">Notes</span> |
 |:--------|:----------------------|:-----------------|:------|
@@ -80,12 +80,12 @@ Redis Cloud manages modules for you and lets you [enable modules](/rc/databases/
 
 ## Monitoring commands
 
-Although Redis Enterprise does not support certain monitoring commands, you can use the admin consoles to view Redis Enterprise Software [metrics](/rs/clusters/monitoring/) and [logs](/rs/clusters/logging/) or Redis Cloud [metrics](/rc/databases/monitor-performance/) and [logs](/rc/databases/system-logs/).
+Although Redis Enterprise does not support certain monitoring commands, you can use the admin consoles to view Redis Enterprise Software [metrics]({{<relref "/rs/clusters/monitoring">}}) and [logs]({{<relref "/rs/clusters/logging">}}) or Redis Cloud [metrics]({{<relref "/rc/databases/monitor-performance">}}) and [logs]({{<relref "/rc/logs-reports/system-logs">}}).
 
 | <span style="min-width: 9em; display: table-cell">Command</span> | Redis<br />Enterprise | Redis<br />Cloud | <span style="min-width: 9em; display: table-cell">Notes</span> |
 |:--------|:----------------------|:-----------------|:------|
 | [DBSIZE](https://redis.io/commands/dbsize) | <span title="Supported">&#x2705; Standard</span><br /><span title="Supported"><nobr>&#x2705; Active-Active</nobr></span> | <span title="Supported">&#x2705; Standard</span><br /><span title="Supported"><nobr>&#x2705; Active-Active</nobr></span> |  |
-| [INFO](https://redis.io/commands/info) | <span title="Supported">&#x2705; Standard</span><br /><span title="Supported"><nobr>&#x2705; Active-Active</nobr></span> | <span title="Supported">&#x2705; Standard</span><br /><span title="Supported"><nobr>&#x2705; Active-Active</nobr></span> | Not supported for [scripts](https://redis.io/docs/manual/programmability/). |
+| [INFO](https://redis.io/commands/info) | <span title="Supported">&#x2705; Standard</span><br /><span title="Supported"><nobr>&#x2705; Active-Active</nobr></span> | <span title="Supported">&#x2705; Standard</span><br /><span title="Supported"><nobr>&#x2705; Active-Active</nobr></span> | In Redis Enterprise, `INFO` returns a different set of fields than open source Redis.<br />Not supported for [scripts](https://redis.io/docs/manual/programmability/). |
 | [LATENCY DOCTOR](https://redis.io/commands/latency-doctor) | <span title="Not supported">&#x274c; Standard</span><br /><span title="Not supported"><nobr>&#x274c; Active-Active</nobr></span> | <span title="Not supported">&#x274c; Standard</span><br /><span title="Not supported"><nobr>&#x274c; Active-Active</nobr></span> |  |
 | [LATENCY GRAPH](https://redis.io/commands/latency-graph) | <span title="Not supported">&#x274c; Standard</span><br /><span title="Not supported"><nobr>&#x274c; Active-Active</nobr></span> | <span title="Not supported">&#x274c; Standard</span><br /><span title="Not supported"><nobr>&#x274c; Active-Active</nobr></span> |  |
 | [LATENCY HELP](https://redis.io/commands/latency-help) | <span title="Not supported">&#x274c; Standard</span><br /><span title="Not supported"><nobr>&#x274c; Active-Active</nobr></span> | <span title="Not supported">&#x274c; Standard</span><br /><span title="Not supported"><nobr>&#x274c; Active-Active</nobr></span> |  |

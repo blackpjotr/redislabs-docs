@@ -55,7 +55,7 @@ You can run all of these tests on Amazon AWS with these hosts:
 To learn how to install Redis Enterprise Software and set up a cluster, see:
 
 - [Redis Enterprise Software quickstart]({{< relref "rs/installing-upgrading/quickstarts/redis-enterprise-software-quickstart" >}}) for a test installation
-- [Install and upgrade]({{< relref "/rs/installing-upgrading/_index.md" >}}) for a production installation
+- [Install and upgrade]({{< relref "/rs/installing-upgrading" >}}) for a production installation
 
 These tests use a quorum node to reduce AWS EC2 instance use while maintaining the three nodes required to support a quorum node in case of node failure.  Quorum nodes can be on less powerful instances because they do not have shards or support traffic.
 
@@ -192,6 +192,6 @@ You can either monitor the results in the **metrics** tab of the admin console o
 You should expect to see an average throughput of:
 
 - Around 160,000 ops/sec when testing without replication (i.e. Four master shards)
-- Around 115,000 ops/sec when testing with enabled replication (i.e. Four master and 2 replica shards)
+- Around 115,000 ops/sec when testing with enabled replication (i.e. 2 master and 2 replica shards)
 
 In both cases, the average latency should be below one millisecond.
